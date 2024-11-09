@@ -1,0 +1,16 @@
+go run main.go
+go mod init codeGo
+
+
+http://localhost:8080/tarefa
+POST
+{
+    "descricao": "Descrição da tarefa",
+    "concluida": false
+}
+
+http://localhost:8080/tarefas
+GET
+
+http://localhost:8080/tarefa/concluir?id=2
+POST
