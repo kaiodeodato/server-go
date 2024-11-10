@@ -26,7 +26,7 @@ COPY --from=builder /app/servidor /usr/local/bin/servidor
 # IMPORTANTE: O caminho precisa ser correto!
 COPY ./templates /app/templates
 COPY ./static /app/static
-
+COPY .env /app/.env
 # Expõe a porta 8080 para que o contêiner possa receber requisições
 EXPOSE 8080
 
